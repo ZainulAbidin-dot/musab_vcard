@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Info</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #ddd;
+            margin-top: -70px;
+        }
+
+        .contact-card {
+            border-radius: 15px;
+            padding: 30px;
+            background-color: #f8f9fa;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-card h3 {
+            font-weight: 600;
+        }
+
+        .contact-card .btn {
+            width: 100%;
+        }
+
+        .contact-info {
+            margin-top: 15px;
+        }
+
+        .contact-info th {
+            width: 200px;
+        }
+
+        .useremail {
+            display: flex;
+            flex-direction: column;
+        }
+
+        table tr {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .col-table {
+          display: flex;
+          flex-direction: column;
+          /* padding: 1rem; */
+        }        
+        
+        .column-table {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin: 1rem;
+        }
+        
+        .col-table div {
+          display: flex;
+          
+          justify-content: space-between;
+          /* flex-direction: column; */
+        }
+        
+        /* Ensure text is responsive */
+        @media (max-width: 768px) {
+            .contact-card {
+                width: 100%;
+            }
+            .contact-info th {
+                width: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <div class="card contact-card" style="width: 25rem; margin-top: 5rem; margin-bottom: 2rem;">
+        <!-- Profile Image -->
+        <div class="text-center">
+            <img src="https://lh3.googleusercontent.com/d/1WKcaxF0ZBl37sGU-hvSNPDnc_fvEQ8gN" alt="Profile Image" class="profile-img">
+        </div>
+
+        <!-- Contact Info -->
+        <div class="text-center">
+            <h3>Abdulrahman A Z Alshathry</h3>
+            <p class="text-muted">Chairman & CEO</p>
+        </div>
+        <div class="contact-info">
+          <table class="table table-borderless">
+              <!-- Basic Contact Information -->
+              <tr>
+                  <th>Phone (Mobile)</th>
+                  <td><a href="tel:+966505482224">+966505482224</a></td>
+              </tr>
+              <tr>
+                  <th>Email</th>
+                  <td>
+                      <div class="useremail">
+                          <a href="mailto:alshathry@saudicontrols.com">alshathry@saudicontrols.com</a><br>
+                          <a href="mailto:pa.ceo@saudicontrols.com">pa.ceo@saudicontrols.com</a>
+                      </div>
+                  </td>
+              </tr>
+              <tr>
+                  <th>Website</th>
+                  <td><a href="https://www.saudicontrols.com/" target="_blank">www.saudicontrols.com</a></td>
+              </tr>
+              <tr>
+                  <th>Company</th>
+                  <td>SaudiControls Ltd</td>
+              </tr>
+              <tr>
+                  <th>Job Title</th>
+                  <td>Chairman & CEO</td>
+              </tr>
+              <tr>
+                  <th>Phone (Office)</th>
+                  <td><a href="tel:+966114803338">+966114803338</a></td>
+              </tr>
+              <tr>
+                  <th>Address</th>
+                  <td>Building#5682, Makkah Road, East Um Al Hammam, Riyadh, Saudi Arabia</td>
+              </tr>
+      
+              <!-- Address Information in two columns -->
+              <tr>
+                  <th>Post Code</th>
+                  <td>12321</td>
+              </tr>
+              <tr>
+                  <th>City</th>
+                  <td>Riyadh</td>
+              </tr>    
+      
+              <tr>
+                  <th>State</th>
+                  <td>Central</td>
+              </tr>
+              <tr>
+                  <th>Country</th>
+                  <td>Kingdom Of Saudi Arabia</td>
+              </tr>
+          </table>
+      </div>
+      
+
+        <!-- Save as Contact Button -->
+        <div class="text-center">
+            <!-- vCard file for download -->
+            <a href="data:text/vcard;charset=utf-8,BEGIN:VCARD%0AVERSION:4.0%0AN%3AAlshathry%3BAbdulrahman%20A%20Z%0AEMAIL%3Aalshathry%40saudicontrols.com%0AEMAIL%3Apa.ceo%40saudicontrols.com%0ATEL%3BTYPE%3Dcell%3A%2B966505482224%0ATEL%3BTYPE%3Dwork%3A%2B966114803338%0AADR%3BTYPE%3Dhome%3A%3BBuilding%235682%2C%20Makkah%20Road%2C%20East%20Um%20Al%20Hammam%2C%20Riyadh%2C%20Saudi%20Arabia%0AURL%3Ahttps%3A%2F%2Fwww.saudicontrols.com%2F%0AORG%3ASaudiControls%20Ltd%0ATITLE%3AChairman%20%26%20CEO%0APHOTO%3BTYPE%3DJPEG%3BVALUE%3DURI%3Ahttps%3A%2F%2Flh3.googleusercontent.com%2Fd%2F1WKcaxF0ZBl37sGU-hvSNPDnc_fvEQ8gN%0AEND:VCARD" 
+            download="contact.vcf" class="btn btn-primary save-btn mb-3">
+            Save as Contact
+         </a>
+         
+         
+        
+            <!-- Open Contact (on mobile, this will open in native contact app) -->
+            <a href="tel:+966505482224" class="btn btn-success mb-3">
+                Call Mobile
+            </a>
+            <a href="mailto:alshathry@saudicontrols.com" class="btn btn-info">
+                Send Email
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
